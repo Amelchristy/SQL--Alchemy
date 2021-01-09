@@ -1,7 +1,7 @@
 # SQL Alchemy Challenge
 
 #Part 1 
-This challenge uses Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
+This challenge uses Python and SQLAlchemy to do basic climate analysis and data exploration of the climate database. All of the following analysis were completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
 
 #Part 2
