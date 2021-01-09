@@ -9,7 +9,6 @@ from sqlalchemy.pool import StaticPool
 
 
 # Database Setup
-
 engine = create_engine("sqlite:///Resources/hawaii.sqlite", connect_args={"check_same_thread": False}, poolclass=StaticPool, echo=True)
 
 
@@ -21,11 +20,10 @@ Base.prepare(engine, reflect=True)
 Measurement = Base.classes.measurement
 Station = Base.classes.station
 
-# Create Session (Link) From Python to the DB
+
 session = Session(engine)
 
 # Flask Setup
-
 app = Flask(__name__)
 
 
