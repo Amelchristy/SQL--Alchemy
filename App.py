@@ -33,28 +33,26 @@ app = Flask(__name__)
 @app.route("/")
 def welcome():
         return """<html>
-<h1>Hawaii Climate App (Flask API)</h1>
+<h1>Hawaii Climate Flask App</h1>
 <img src="https://www.johnnyjet.com/wp-content/uploads/2020/12/hawaii-move.jpg" alt="Hawaii Weather"/>
 <p><b>Precipitation Analysis:</b></p>
 <a href="/api/v1.0/precipitation">Precipitation</a>
 
 <br>
-<p>Station Analysis:</p>
-<ul>
-  <li><a href="/api/v1.0/stations">Stations List</a></li>
-</ul>
-<p>Temperature Analysis:</p>
-<ul>
-  <li><a href="/api/v1.0/tobs">Tobs at Station USC00519281 </a></li>
-</ul>
-<p>Start Day Analysis:</p>
-<ul>
-  <li><a href="/api/v1.0/2017-08-12">2017-08-12</a></li>
-</ul>
-<p>Start & End Day Analysis:</p>
-<ul>
-  <li><a href="/api/v1.0/2017-08-12/2017-08-26">2017-08-12 --- 2017-08-26</a></li>
-</ul>
+<p><b>Station Analysis:</b></p>
+<a href="/api/v1.0/stations">Stations List</a>
+
+<br>
+<p><b>Temperature Analysis:</b></p>
+<a href="/api/v1.0/tobs">Tobs at Station USC00519281 </a>
+
+<br>
+<p><b>Start Day Analysis:</b></p>
+<a href="/api/v1.0/2017-08-12">2017-08-12</a>
+
+<p><b>Start & End Day Analysis:</b></p>
+
+<a href="/api/v1.0/2017-08-12/2017-08-26">2017-08-12 --- 2017-08-26</a>
 </html>
 """
 
