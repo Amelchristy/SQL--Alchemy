@@ -35,10 +35,10 @@ def welcome():
         return """<html>
 <h1>Hawaii Climate App (Flask API)</h1>
 <img src="https://www.johnnyjet.com/wp-content/uploads/2020/12/hawaii-move.jpg" alt="Hawaii Weather"/>
-<p>Precipitation Analysis:</p>
-<ul>
-  <li><a href="/api/v1.0/precipitation">Precipitation</a></li>
-</ul>
+<p><b>Precipitation Analysis:</b></p>
+<a href="/api/v1.0/precipitation">Precipitation</a>
+
+<br>
 <p>Station Analysis:</p>
 <ul>
   <li><a href="/api/v1.0/stations">Stations List</a></li>
