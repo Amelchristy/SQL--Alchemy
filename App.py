@@ -10,10 +10,7 @@ from sqlalchemy.pool import StaticPool
 
 # Database Setup
 engine = create_engine("sqlite:///Resources/hawaii.sqlite", connect_args={"check_same_thread": False}, poolclass=StaticPool, echo=True)
-
-
 Base = automap_base()
-
 Base.prepare(engine, reflect=True)
 
 # Save References to Each Table
@@ -100,15 +97,15 @@ def start_day(start):
 
 # Start-End Day Route
 @app.route("/api/v1.0/<start>/<end>")
-def start_end_day(start, end):
-        start_end_day = session.query(Measurement.date, func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
+def StartEnd(start, end):
+        StartEnd = session.query(Measurement.date, func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
                 filter(Measurement.date >= start).\
                 filter(Measurement.date <= end).\
                 group_by(Measurement.date).all()
         # Convert List of Tuples Into Normal List
-        start_end_day_list = list(start_end_day)
+        StartEndList = list(StartEnd)
         # Return JSON List of Min Temp, Avg Temp and Max Temp for a Given Start-End Range
-        return jsonify(start_end_day_list)
+        return jsonify(StartEndList)
 
 # Define Main Behavior
 if __name__ == '__main__':
