@@ -8,4 +8,4 @@ I use the provided starter notebook and hawaii.sqlite files to do Hawaii climate
 
 ## Station Analysis
 -I design a query to calculate the total number of stations, the most active stations, and the last 12 months of temperature observation data (TOBS) from the most active station.
-![station-histogram](Images/temperature_vs_frequency.png.png)
+![station-histogram](Images/temperature_vs_frequency.png)
