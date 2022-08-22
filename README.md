@@ -2,7 +2,7 @@
 
 I completed this project during my Data Analysis and Visualization Bootcamp at the University of Pennsylvania. The purpose of the assignment was to learn how to use SQL Alchemy and connect the database from SQL Alchemy to a python flask app. 
 
-To learn this, I used the provided starter notebook and Hawaii.sqlite files to compile a Hawaii climate analysis and data exploration. I used Python and SQLAlchemy for the analysis and data exploration purpose. 
+To learn this, I used the provided starter notebook and Hawaii.sqlite files to compile a Hawaii climate analysis and data exploration. I used Python and SQLAlchemy for the analysis and data exploration purpose. You can view my full analysis here https://github.com/Amelchristy/SQL-Alchemy-Challenge/blob/main/Hawaii%20Climate.ipynb 
 
 ## Precipitation Analysis
 -  I retrieved the 12-month data set using Pandas and plotted the date and precipitation on a graph. From this data, I was able to produce the graph below that shows the precipitation in Hawaii from 08/23/2016- 08/23/2017.  
